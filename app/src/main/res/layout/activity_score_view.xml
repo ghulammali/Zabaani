@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/s3"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/s2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sgo" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:fontFamily="@font/changa"
+        android:text="score"
+        android:textColor="#572308"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/again"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:text="Button"
+        android:textColor="#adcf64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/Quit"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:text="Button"
+        android:textColor="#adcf64"
+        app:layout_constraintEnd_toEndOf="@+id/again"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/again"
+        app:layout_constraintTop_toBottomOf="@+id/again" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="127dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="196dp"
+        android:fontFamily="@font/changa"
+        android:text="Score "
+        android:textColor="#572308"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/s1"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/s2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sgo" />
+
+    <ImageView
+        android:id="@+id/s2"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sgo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

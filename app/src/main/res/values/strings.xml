@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Zabani</string>
+    <string name="app_play">Play</string>
+    <string name="app_help">Help</string>
+    <string name="app_options">Options</string>
+    <string name="app_exit">Exit</string>
+
+    <string name="howtp_blanks">Blanks</string>
+    <string name="howtp_matchTwo">Match Two</string>
+    <string name="howtp_mcq">MCQs</string>
+    <string name="howtp_shuffle">Shuffle</string>
+    <string name="howtp_flashes">Flashes</string>
+    <string name="howtp_stories">Stories</string>
+
+    <string name="options_changeName">Change Name</string>
+    <string name="options_musicChangeOn">Music: ON</string>
+    <string name="options_musicChangeOff">Music: OFF</string>
+    <string name="options_menuText">Menu Text: English</string>
+    <string name="options_resetScores">Reset Scores</string>
+
+    <string name="result_playAgain">Play Again</string>
+    <string name="result_mainMenu">Main Menu</string>
+
+    <string name="BlankHelp_01">You will be shown a sentence with few blank(s).</string>
+    <string name="BlankHelp_02">Some possible answers will be shown below it.</string>
+    <string name="BlankHelp_03">Tap on what you think is the correct answer to fill in the space(s).</string>
+    <string name="BlankHelp_04">For each correct answer, you get a +1 score.</string>
+
+    <string name="McqHelp_01">You will be shown a multiple choice question.</string>
+    <string name="McqHelp_02">Four possible answers will be shown below it.</string>
+    <string name="McqHelp_03">Tap on what you think is the correct answer.</string>
+    <string name="McqHelp_04">For each correct answer, you get a +1 score.</string>
+
+</resources>

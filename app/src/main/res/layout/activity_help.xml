@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:background="@drawable/background"
+    >
+
+    <Button
+        android:id="@+id/BlanksButton"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:gravity="center"
+        android:onClick="onClickBlankHelp"
+        android:layout_marginTop="40dp"
+        android:text="BLANKS"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/MTwoButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:gravity="center"
+        android:onClick="onClickMtwoHelp"
+        android:text="Match Two"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/BlanksButton"
+        app:layout_constraintRight_toRightOf="@id/BlanksButton"
+        app:layout_constraintTop_toBottomOf="@id/BlanksButton"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/McqButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:gravity="center"
+        android:text="MCQs"
+        android:textSize="30sp"
+        android:textColor="@color/textcolor"
+        app:layout_constraintLeft_toLeftOf="@id/MTwoButton"
+        app:layout_constraintRight_toRightOf="@id/MTwoButton"
+        app:layout_constraintTop_toBottomOf="@id/MTwoButton"
+        app:layout_constraintVertical_weight="1"
+        android:onClick="onClickMcqHelp"/>
+
+    <Button
+        android:id="@+id/ShuffleButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:gravity="center"
+        android:text="shuffle"
+        android:onClick="onClickShuffleHelp"
+        android:textSize="30sp"
+        android:textColor="@color/textcolor"
+        app:layout_constraintLeft_toLeftOf="@id/McqButton"
+        app:layout_constraintRight_toRightOf="@id/McqButton"
+        app:layout_constraintTop_toBottomOf="@id/McqButton"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/FlashesButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:gravity="center"
+        android:textColor="@color/textcolor"
+        android:text="Flashes"
+        android:onClick="onClickFlashHelp"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/ShuffleButton"
+        app:layout_constraintRight_toRightOf="@id/ShuffleButton"
+        app:layout_constraintTop_toBottomOf="@id/ShuffleButton"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/StoriesButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:gravity="center"
+        android:text="stories"
+        android:onClick="onClickStoriesHelp"
+        android:textSize="30sp"
+        android:textColor="@color/textcolor"
+        app:layout_constraintLeft_toLeftOf="@id/FlashesButton"
+        app:layout_constraintRight_toRightOf="@id/FlashesButton"
+        app:layout_constraintTop_toBottomOf="@id/FlashesButton"
+        app:layout_constraintVertical_weight="1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="278dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/htp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

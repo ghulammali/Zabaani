@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionsActivity"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/ChangeNameButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:text="CHANGE NAME"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:onClick="onClickChangeNameOption"/>
+
+    <Button
+        android:id="@+id/MusicButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:text="MUSIC : ON"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@id/ChangeNameButton"
+        app:layout_constraintRight_toRightOf="@id/ChangeNameButton"
+        app:layout_constraintTop_toBottomOf="@id/ChangeNameButton"
+        android:onClick="onClickMusicOption"/>
+
+    <Button
+        android:id="@+id/MenuTextButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:text="MENU TEXT : ENGLISH"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@id/MusicButton"
+        app:layout_constraintRight_toRightOf="@id/MusicButton"
+        app:layout_constraintTop_toBottomOf="@id/MusicButton"
+        android:onClick="onClickMenuTextOption"/>
+
+    <Button
+        android:id="@+id/ResetScoreButton"
+        android:layout_width="180sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:text="RESET SCORES"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@id/MenuTextButton"
+        app:layout_constraintRight_toRightOf="@id/MenuTextButton"
+        app:layout_constraintTop_toBottomOf="@id/MenuTextButton"
+        android:onClick="onClickResetScoreOption"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="281dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/options" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
