@@ -1,4 +1,8 @@
 <resources>
+    <string name="Locale_key">en_US</string>
+    <string name="Urdu_Locale">ur</string>
+    <string name="English_Locale">en_US</string>
+
     <string name="app_name">Zabani</string>
     <string name="app_play">Play</string>
     <string name="app_help">Help</string>

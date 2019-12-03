@@ -3,10 +3,16 @@ package com.example.zabaani;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
+
+import java.util.Locale;
 
 public class SplashActivity extends AppCompatActivity {
 

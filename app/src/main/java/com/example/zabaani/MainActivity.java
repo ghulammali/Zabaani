@@ -9,43 +9,40 @@ import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import java.util.Locale;
+import java.util.prefs.Preferences;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String appLang;
     MediaPlayer ring;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String LOCALE_KEY = getResources().getString(R.string.Locale_key);
+        //String URDU_LOCALE = getResources().getString(R.string.Urdu_Locale);
+        String ENGLISH_LOCALE = getResources().getString(R.string.English_Locale);
+
+        SharedPreferences shp = PreferenceManager.getDefaultSharedPreferences(this);
+        appLang = shp.getString(LOCALE_KEY, ENGLISH_LOCALE);
+
+        Locale locale = new Locale(appLang);
+
+        Configuration config = new Configuration();
+
+        config.setLocale(locale);
+
+        getResources().updateConfiguration(
+                config, getResources().getDisplayMetrics()
+        );
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-        if (sp.contains("localPref")) {
-            String lang = sp.getString("localPref", "");
-
-            if (lang.equals("en_US")) {
-                Locale locale = new Locale("en_US");
-                Resources resources = getApplicationContext().getResources();
-                Configuration configuration = resources.getConfiguration();
-                //configuration.setToDefaults(locale);
-                configuration.setLocale(locale);
-                getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
-                recreate();
-            } else {
-                Locale locale = new Locale("ur");
-                Resources resources = getApplicationContext().getResources();
-                Configuration configuration = resources.getConfiguration();
-                //configuration.setToDefaults(locale);
-                configuration.setLocale(locale);
-                getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
-                recreate();
-            }
-        }
-
-
+        //Log.w("localPref", "Before sp test");
         ring = MediaPlayer.create(getApplicationContext(), R.raw.overworld_terraria);
         ring.start();
         ring.setLooping(true);
@@ -66,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickExit(View v){
+        //String LOCALE_KEY = getResources().getString(R.string.Locale_key);
+
         ring.stop();
         finishAffinity();
         System.exit(0);

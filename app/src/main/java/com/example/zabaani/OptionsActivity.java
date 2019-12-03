@@ -6,17 +6,14 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import java.util.Locale;
 
 public class OptionsActivity extends AppCompatActivity {
-
-    private static final String LOCALE_KEY = "localekey";
-    private static final String URDU_LOCALE = "ur";
-    private static final String ENGLISH_LOCALE = "en_US";
-    private static final String LOCALE_PREF_KEY = "localePref";
 
     private Locale locale;
 
@@ -38,24 +35,54 @@ public class OptionsActivity extends AppCompatActivity {
     }
 
     public void onClickMenuTextOption(View view){
-        Resources resources = getApplicationContext().getResources();
-        SharedPreferences sp = getSharedPreferences("localPref", MODE_PRIVATE);
+        //Resources resources = getApplicationContext().getResources();
+
+        String LOCALE_KEY = getResources().getString(R.string.Locale_key);
+        String URDU_LOCALE = getResources().getString(R.string.Urdu_Locale);
+        String ENGLISH_LOCALE = getResources().getString(R.string.English_Locale);
+
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sp.edit();
 
-        if (sp.getString(LOCALE_KEY, ENGLISH_LOCALE).equals(URDU_LOCALE)) {
+        String keyValue = sp.getString(getResources().getString(R.string.Locale_key), ENGLISH_LOCALE);
+        Log.w("key Value", keyValue);
+        if (keyValue.equals(URDU_LOCALE)) {
             locale = new Locale(ENGLISH_LOCALE);
-            editor.putString(LOCALE_KEY, ENGLISH_LOCALE);
-        } else {
-            locale = new Locale(URDU_LOCALE);
-            editor.putString(LOCALE_KEY, URDU_LOCALE);
-        }
-        editor.apply();
+            //Locale.setDefault(locale);
 
-        Configuration configuration = resources.getConfiguration();
-        //configuration.setToDefaults(locale);
-        configuration.setLocale(locale);
-        getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
-        recreate();
+            //editor.clear();
+            editor.putString(getResources().getString(R.string.Locale_key), "en_US");
+            editor.apply();
+
+            Configuration config = new Configuration();
+
+            config.setLocale(locale);
+
+            getResources().updateConfiguration(
+                    config, getResources().getDisplayMetrics()
+            );
+            super.recreate();
+            Log.w("localPref", "recreated");
+            Log.w("localPref", "Changed to English");
+        } else if (keyValue.equals(ENGLISH_LOCALE)) {
+            locale = new Locale(URDU_LOCALE);
+            //Locale.setDefault(locale);
+
+            //editor.clear();
+            editor.putString(getResources().getString(R.string.Locale_key), "ur");
+            editor.apply();
+
+            Configuration config = new Configuration();
+
+            config.setLocale(locale);
+
+            getResources().updateConfiguration(
+                    config, getResources().getDisplayMetrics()
+            );
+            super.recreate();
+            Log.w("localPref", "recreated");
+            Log.w("localPref", "Changed to Urdu");
+        }
         Toast.makeText(getApplicationContext(), "Button Tapped. Should change Text!", Toast.LENGTH_SHORT).show();
     }
 
