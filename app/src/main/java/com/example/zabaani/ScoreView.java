@@ -68,9 +68,9 @@ public class ScoreView extends AppCompatActivity {
 
         // configure button and display score
         Quit = findViewById(R.id.Quit);
-        Quit.setText("Quit");
+        //Quit.setText("Quit");
         again = findViewById(R.id.again);
-        again.setText("Play Again");
+        //again.setText("Play Again");
         Viewscore = findViewById(R.id.score);
         Viewscore.setText(String.valueOf(currentScore));
 
