@@ -18,6 +18,7 @@ public class McqFragmentPage02  extends Fragment {
         view = inflater.inflate(R.layout.page_fragment_layout, container, false);
         TextView textView = (TextView) view.findViewById(R.id.textid);
         textView.setText(getResources().getString(R.string.McqHelp_02));
+
         return view;
     }
 }

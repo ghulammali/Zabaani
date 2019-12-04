@@ -18,26 +18,26 @@ import java.util.prefs.Preferences;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String appLang;
+    //public static String appLang;
     MediaPlayer ring;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String LOCALE_KEY = getResources().getString(R.string.Locale_key);
-        //String URDU_LOCALE = getResources().getString(R.string.Urdu_Locale);
-        String ENGLISH_LOCALE = getResources().getString(R.string.English_Locale);
-
-        SharedPreferences shp = PreferenceManager.getDefaultSharedPreferences(this);
-        appLang = shp.getString(LOCALE_KEY, ENGLISH_LOCALE);
-
-        Locale locale = new Locale(appLang);
-
-        Configuration config = new Configuration();
-
-        config.setLocale(locale);
-
-        getResources().updateConfiguration(
-                config, getResources().getDisplayMetrics()
-        );
+//        String LOCALE_KEY = getResources().getString(R.string.Locale_key);
+//        //String URDU_LOCALE = getResources().getString(R.string.Urdu_Locale);
+//        String ENGLISH_LOCALE = getResources().getString(R.string.English_Locale);
+//
+//        SharedPreferences shp = PreferenceManager.getDefaultSharedPreferences(this);
+//        appLang = shp.getString(LOCALE_KEY, ENGLISH_LOCALE);
+//
+//        Locale locale = new Locale(appLang);
+//
+//        Configuration config = new Configuration();
+//
+//        config.setLocale(locale);
+//
+//        getResources().updateConfiguration(
+//                config, getResources().getDisplayMetrics()
+//        );
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -64,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickExit(View v){
         //String LOCALE_KEY = getResources().getString(R.string.Locale_key);
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = sp.edit();
+
+        editor.putString(getResources().getString(R.string.Locale_key), "en_US");
+        editor.apply();
 
         ring.stop();
         finishAffinity();
