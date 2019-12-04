@@ -19,7 +19,8 @@ import java.util.prefs.Preferences;
 public class MainActivity extends AppCompatActivity {
 
     //public static String appLang;
-    MediaPlayer ring;
+    //MediaPlayer ring;
+    //AudioPlay ring;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 //        String LOCALE_KEY = getResources().getString(R.string.Locale_key);
@@ -42,10 +43,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Log.w("localPref", "Before sp test");
-        ring = MediaPlayer.create(getApplicationContext(), R.raw.overworld_terraria);
-        ring.start();
-        ring.setLooping(true);
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = sp.edit();
+        String keyvalue = sp.getString("Music", "On");
+        Integer musicPlayerCount = sp.getInt("Music_player", 0);
+
+        if (keyvalue.equalsIgnoreCase("On") && musicPlayerCount.equals(0)) {
+            editor.putInt("Music_player", 1);
+            editor.apply();
+            AudioPlay.playAudio(getApplicationContext(), R.raw.overworld_terraria);
+        }
     }
     public void levels (View v){
         Intent intent = new Intent(this,LevelActivity.class);
@@ -67,10 +74,17 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sp.edit();
 
+        String keyvalue = sp.getString("Music", "On");
+        Integer musicPlayerCount = sp.getInt("Music_player", 0);
+
+        if (keyvalue.equalsIgnoreCase("On") && musicPlayerCount.equals(1)) {
+            editor.putInt("Music_player", 0);
+            AudioPlay.stopAudio();
+            editor.apply();
+        }
         editor.putString(getResources().getString(R.string.Locale_key), "en_US");
         editor.apply();
 
-        ring.stop();
         finishAffinity();
         System.exit(0);
     }

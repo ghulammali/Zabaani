@@ -23,16 +23,24 @@ public class OptionsActivity extends AppCompatActivity {
     private Locale locale;
     //public int lang;
     private TextView ChangeNameButton;
+    private TextView MusicButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
-        //this.lang = 0;
 
         ChangeNameButton = (TextView) findViewById(R.id.ChangeNameButton);
-        //SharedPreferences sp = getSharedPreferences(LOCALE_PREF_KEY, MODE_PRIVATE);
-        //String localeString = sp.getString(LOCALE_KEY, ENGLISH_LOCALE);
+
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        String keyvalue = sp.getString("Music", "On");
+
+        MusicButton = (TextView) findViewById(R.id.MusicButton);
+        if (keyvalue.equalsIgnoreCase("On")) {
+            MusicButton.setText(R.string.options_musicChangeOn);
+        } else {
+            MusicButton.setText(R.string.options_musicChangeOff);
+        }
     }
 
     public void onClickChangeNameOption(View view){
@@ -77,7 +85,25 @@ public class OptionsActivity extends AppCompatActivity {
     }
 
     public void onClickMusicOption(View view){
-        Toast.makeText(getApplicationContext(), "Feature Coming Soon!", Toast.LENGTH_SHORT).show();
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = sp.edit();
+
+        String keyvalue = sp.getString("Music", "On");
+        Integer musicPlayerCount = sp.getInt("Music_player", 0);
+
+        if (keyvalue.equalsIgnoreCase("On") && musicPlayerCount.equals(1)) {
+            editor.putString("Music", "Off");
+            editor.putInt("Music_player", 0);
+            editor.apply();
+            MusicButton.setText(R.string.options_musicChangeOff);
+            AudioPlay.stopAudio();
+        } else if (keyvalue.equalsIgnoreCase("Off") && musicPlayerCount.equals(0)) {
+            editor.putString("Music", "On");
+            editor.putInt("Music_player", 1);
+            editor.apply();
+            MusicButton.setText(R.string.options_musicChangeOn);
+            AudioPlay.playAudio(getApplicationContext(), R.raw.overworld_terraria);
+        }
     }
 
     public void onClickMenuTextOption(View view){

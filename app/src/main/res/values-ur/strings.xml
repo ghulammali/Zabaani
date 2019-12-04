@@ -5,6 +5,8 @@
     <string name="English_Locale">en_US</string>
 
     <string name="User_name">Human</string>
+    <string name="Music">On</string>
+    <integer name="Music_player">0</integer>
 
     <string name="app_name">Zabani</string>
     <string name="app_play">Play</string>

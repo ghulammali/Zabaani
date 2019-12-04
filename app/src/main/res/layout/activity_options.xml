@@ -29,7 +29,6 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_red_border"
         android:fontFamily="@font/changa"
-        android:text="@string/options_musicChangeOn"
         android:textColor="@color/textcolor"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="0.5"
