@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/ZabaaniLogo"
@@ -28,8 +27,8 @@
         android:background="@drawable/rounded_red_border"
         android:fadingEdge="horizontal|vertical"
         android:fontFamily="@font/changa"
-        android:text="@string/app_play"
         android:onClick="levels"
+        android:text="@string/app_play"
         android:textColor="@color/textcolor"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@id/ZabaaniLogo"
@@ -87,7 +86,6 @@
         app:layout_constraintLeft_toLeftOf="@id/OptionsButton"
         app:layout_constraintRight_toRightOf="@id/OptionsButton"
         app:layout_constraintTop_toBottomOf="@id/OptionsButton" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
