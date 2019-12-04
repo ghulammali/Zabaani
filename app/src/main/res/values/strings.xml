@@ -3,9 +3,16 @@
     <string name="Urdu_Locale">ur</string>
     <string name="English_Locale">en_US</string>
 
+    <string name="DialogueBoxEnterName">Your Name</string>
+    <string name="DialogueBoxInputHint">Enter your name here</string>
+
     <string name="User_name">Human</string>
     <string name="Music">On</string>
     <integer name="Music_player">0</integer>
+
+    <integer name="score_level01">0</integer>
+    <integer name="score_level02">0</integer>
+    <integer name="score_level03">0</integer>
 
     <string name="app_name">Zabani</string>
     <string name="app_play">Play</string>
@@ -39,7 +46,5 @@
     <string name="McqHelp_03">Tap on what you think is the correct answer.</string>
     <string name="McqHelp_04">For each correct answer, you get a +1 score.</string>
 
-    <string name="DialogueBoxEnterName">Your Name</string>
-    <string name="DialogueBoxInputHint">Enter your name here</string>
 
 </resources>

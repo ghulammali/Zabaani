@@ -73,7 +73,7 @@ public class OptionsActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
-                        Toast.makeText(getApplicationContext(), "No changes made", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "No Changes Made", Toast.LENGTH_SHORT).show();
                         //Log.w("check", keyvalue);
                     }
                 });
