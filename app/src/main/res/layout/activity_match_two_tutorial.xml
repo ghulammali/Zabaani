@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".McqTutorialActivity"
+    tools:context=".MatchTwoTutorialActivity"
     android:background="@drawable/background">
 
     <TextView
-        android:id="@+id/McqTopHeader"
+        android:id="@+id/MatchTwoHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/McqTutorial_Header"
+        android:text="@string/MatchTwoTutorial_Header"
         android:textColor="#572308"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -21,36 +21,36 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView7"
         android:layout_width="77dp"
         android:layout_height="127dp"
         android:layout_marginTop="260dp"
-        android:layout_marginEnd="265dp"
-        app:layout_constraintEnd_toEndOf="@+id/McqTopHeader"
-        app:layout_constraintTop_toTopOf="@+id/McqTopHeader"
+        android:layout_marginEnd="300dp"
+        app:layout_constraintEnd_toEndOf="@+id/MatchTwoHeader"
+        app:layout_constraintTop_toTopOf="@+id/MatchTwoHeader"
         app:srcCompat="@drawable/arrowleft" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView8"
         android:layout_width="77dp"
         android:layout_height="127dp"
         android:layout_marginStart="275dp"
         android:layout_marginTop="260dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/McqTopHeader"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/MatchTwoHeader"
         app:srcCompat="@drawable/arrowright" />
 
     <FrameLayout
-        android:id="@+id/frameLayout2"
+        android:id="@+id/frameLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="24dp"
         android:orientation="horizontal"
-        app:layout_constraintLeft_toLeftOf="@id/McqTopHeader"
-        app:layout_constraintRight_toRightOf="@id/McqTopHeader"
-        app:layout_constraintTop_toBottomOf="@id/McqTopHeader">
+        app:layout_constraintLeft_toLeftOf="@id/MatchTwoHeader"
+        app:layout_constraintRight_toRightOf="@id/MatchTwoHeader"
+        app:layout_constraintTop_toBottomOf="@id/MatchTwoHeader">
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/view_pager"
@@ -58,9 +58,9 @@
             android:layout_height="450dp"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            app:layout_constraintLeft_toLeftOf="@id/McqTopHeader"
-            app:layout_constraintRight_toRightOf="@id/McqTopHeader"
-            app:layout_constraintTop_toBottomOf="@id/McqTopHeader" />
+            app:layout_constraintLeft_toLeftOf="@id/MatchTwoHeader"
+            app:layout_constraintRight_toRightOf="@id/MatchTwoHeader"
+            app:layout_constraintTop_toBottomOf="@id/MatchTwoHeader" />
 
     </FrameLayout>
 

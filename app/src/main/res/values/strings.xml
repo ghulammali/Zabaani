@@ -36,15 +36,23 @@
     <string name="result_playAgain">Play Again</string>
     <string name="result_mainMenu">Main Menu</string>
 
+    <string name="BlankTutorial_Header">How to play: Blanks</string>
     <string name="BlankHelp_01">You will be shown a sentence with few blank(s).</string>
     <string name="BlankHelp_02">Some possible answers will be shown below it.</string>
     <string name="BlankHelp_03">Tap on what you think is the correct answer to fill in the space(s).</string>
     <string name="BlankHelp_04">For each correct answer, you get a +1 score.</string>
 
+    <string name="McqTutorial_Header">How to play: MCQs</string>
     <string name="McqHelp_01">You will be shown a multiple choice question.</string>
     <string name="McqHelp_02">Four possible answers will be shown below it.</string>
     <string name="McqHelp_03">Tap on what you think is the correct answer.</string>
     <string name="McqHelp_04">For each correct answer, you get a +1 score.</string>
+
+    <string name="MatchTwoTutorial_Header">How to play: Match Two</string>
+    <string name="MatchtwoHelp_01">You will be shown a match two question.</string>
+    <string name="MatchtwoHelp_02">Multiple answers will be shown.</string>
+    <string name="MatchtwoHelp_03">Connect two options you think are correct.</string>
+    <string name="MatchtwoHelp_04">For each correct answer, you get a +1 score.</string>
 
 
 </resources>

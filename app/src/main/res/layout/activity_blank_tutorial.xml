@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="How to play: Blanks"
+        android:text="@string/BlankTutorial_Header"
         android:textAllCaps="true"
         android:textSize="30sp"
         android:textColor="#572308"

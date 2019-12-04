@@ -26,7 +26,9 @@ public class HelpActivity extends AppCompatActivity {
     }
 
     public void onClickMtwoHelp(View view){
-        Toast.makeText(getApplicationContext(), "Feature Coming Soon!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(HelpActivity.this, MatchTwoTutorialActivity.class);
+        startActivity(intent);
+        // Toast.makeText(getApplicationContext(), "Feature Coming Soon!", Toast.LENGTH_SHORT).show();
     }
 
     public void onClickShuffleHelp(View view){
