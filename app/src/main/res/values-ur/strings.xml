@@ -4,6 +4,8 @@
     <string name="Urdu_Locale">ur</string>
     <string name="English_Locale">en_US</string>
 
+    <string name="User_name">Human</string>
+
     <string name="app_name">Zabani</string>
     <string name="app_play">Play</string>
     <string name="app_help">Help</string>
@@ -35,5 +37,8 @@
     <string name="McqHelp_02">Four possible answers will be shown below it.</string>
     <string name="McqHelp_03">Tap on what you think is the correct answer.</string>
     <string name="McqHelp_04">For each correct answer, you get a +1 score.</string>
+
+    <string name="DialogueBoxEnterName">Your Name</string>
+    <string name="DialogueBoxInputHint">Enter your name here</string>
 
 </resources>
