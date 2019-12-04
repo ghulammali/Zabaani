@@ -11,7 +11,8 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:replace="android:supportsRtl">
-        <activity android:name=".MatchTwoTutorialActivity"></activity>
+        <activity android:name=".MatchTwo"></activity>
+        <activity android:name=".MatchTwoTutorialActivity" />
         <activity android:name=".FillBlanks" />
         <activity android:name=".LevelActivity" />
         <activity android:name=".MCQ" />
