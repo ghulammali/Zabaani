@@ -4,6 +4,214 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MatchTwo">
+
+
+    <TextView
+        android:id="@+id/emptyBox_1"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/border"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:fontFamily="@font/changa"
+        android:textColor="#572308"
+        app:layout_constraintBottom_toBottomOf="@+id/classification_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/classification_1" />
+
+    <TextView
+        android:id="@+id/emptyBox_2"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/changa"
+        android:textColor="#572308"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/classification_2"
+        app:layout_constraintEnd_toEndOf="@+id/emptyBox_1"
+        app:layout_constraintStart_toStartOf="@+id/emptyBox_1"
+        app:layout_constraintTop_toTopOf="@+id/classification_2" />
+
+    <TextView
+        android:id="@+id/emptyBox_3"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/changa"
+        android:textColor="#572308"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/classification_3"
+        app:layout_constraintEnd_toEndOf="@+id/emptyBox_2"
+        app:layout_constraintStart_toStartOf="@+id/emptyBox_2"
+        app:layout_constraintTop_toTopOf="@+id/classification_3" />
+
+    <TextView
+        android:id="@+id/classification_4"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:text="پھل"
+        android:textSize="36sp"
+        android:textColor="#572308"
+        app:layout_constraintStart_toStartOf="@+id/classification_3"
+        app:layout_constraintTop_toBottomOf="@+id/classification_3" />
+
+    <TextView
+        android:id="@+id/classification_1"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="سبزی"
+        android:textSize="36sp"
+        android:textColor="#572308"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <TextView
+        android:id="@+id/classification_2"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:text="جانور"
+        android:textSize="36sp"
+        android:textColor="#572308"
+        app:layout_constraintStart_toStartOf="@+id/classification_1"
+        app:layout_constraintTop_toBottomOf="@+id/classification_1" />
+
+    <TextView
+        android:id="@+id/classification_3"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:text="پھول"
+        android:textColor="#572308"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/classification_2"
+        app:layout_constraintTop_toBottomOf="@+id/classification_2" />
+
+    <TextView
+        android:id="@+id/emptyBox_4"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/changa"
+        android:textColor="#572308"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/classification_4"
+        app:layout_constraintEnd_toEndOf="@+id/emptyBox_3"
+        app:layout_constraintStart_toStartOf="@+id/emptyBox_3"
+        app:layout_constraintTop_toTopOf="@+id/classification_4" />
+
+    <Button
+        android:id="@+id/item_1"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_red_border"
+        android:text="شیر"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <Button
+        android:id="@+id/item_3"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_red_border"
+        android:text="گاجر"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_1" />
+
+    <Button
+        android:id="@+id/item_2"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_red_border"
+        android:text="آم"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/item_1"
+        app:layout_constraintTop_toBottomOf="@+id/item_1" />
+
+    <Button
+        android:id="@+id/item_4"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_red_border"
+        android:text="گلاب"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_3"
+        app:layout_constraintTop_toBottomOf="@+id/item_3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0" />
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="درج ذیل چیزوں کو ان کے متعلقہ خانوں میں رکھیں "
+        android:textColor="#572308"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="30dp"
+        android:text="Next"
+        android:background="@drawable/rounded_red_border"
+        android:fontFamily="@font/changa"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, HelpActivity.class);
         startActivity(intent);
     }
-
+    // CHANGE THIS BACK
     public void onClickOption(View v){
         Intent intent = new Intent(MainActivity.this, OptionsActivity.class);
         startActivity(intent);

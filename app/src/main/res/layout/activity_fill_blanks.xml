@@ -55,12 +55,12 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_1"
-        android:textColor="#ACDF64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintEnd_toStartOf="@+id/Choice_2"
         app:layout_constraintStart_toStartOf="@+id/question_text"
         app:layout_constraintTop_toBottomOf="@+id/question_text" />
@@ -69,11 +69,11 @@
         android:id="@+id/Choice_2"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="104dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_2"
-        android:textColor="#ACDF64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="@+id/question_text"
         app:layout_constraintTop_toBottomOf="@+id/question_text" />
 
@@ -83,9 +83,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_3"
-        android:textColor="#ACDF64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintStart_toStartOf="@+id/Choice_1"
         app:layout_constraintTop_toBottomOf="@+id/Choice_1" />
 
@@ -95,9 +95,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_4"
-        android:textColor="#ACDF64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintStart_toStartOf="@+id/Choice_2"
         app:layout_constraintTop_toBottomOf="@+id/Choice_2" />
 
@@ -111,12 +111,13 @@
         android:background="@drawable/rounded_red_border"
         android:fontFamily="@font/changa"
         android:text="Quit"
-        android:textColor="#ACDF64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question_text"
-        app:layout_constraintVertical_bias="0.606" />
+        app:layout_constraintVertical_bias="0.788" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

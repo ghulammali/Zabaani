@@ -66,7 +66,7 @@ public class LevelActivity extends AppCompatActivity {
         });
     }
     public void openLevel(int level){
-        Intent i = new Intent(this, MCQ.class);
+        Intent i = new Intent(this, MatchTwo.class);
         Bundle bundle = new Bundle();
         bundle.putInt("stars", level_stars[level-1]);
         bundle.putInt("level", level);

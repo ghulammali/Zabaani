@@ -43,8 +43,8 @@
         android:layout_marginTop="15dp"
         android:background="#ADCF64"
         android:fontFamily="@font/changa"
-        android:text="3"
         android:textColor="#572308"
+        android:text="3"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -55,13 +55,14 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_1"
-        android:textColor="#adcf64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintEnd_toStartOf="@+id/Choice_2"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="@+id/question_text"
         app:layout_constraintTop_toBottomOf="@+id/question_text" />
 
@@ -69,12 +70,12 @@
         android:id="@+id/Choice_2"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="12dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_2"
-        android:textColor="#adcf64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="@+id/question_text"
         app:layout_constraintTop_toBottomOf="@+id/question_text" />
 
@@ -84,9 +85,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_3"
-        android:textColor="#adcf64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintStart_toStartOf="@+id/Choice_1"
         app:layout_constraintTop_toBottomOf="@+id/Choice_1" />
 
@@ -96,9 +97,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_red_border"
-        android:fontFamily="@font/changa"
         android:text="Choice_4"
-        android:textColor="#adcf64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintStart_toStartOf="@+id/Choice_2"
         app:layout_constraintTop_toBottomOf="@+id/Choice_2" />
 
@@ -113,12 +114,13 @@
         android:fontFamily="@font/changa"
         android:onClick="Quit"
         android:text="Quit"
-        android:textColor="#adcf64"
+        android:textColor="@color/textcolor"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
