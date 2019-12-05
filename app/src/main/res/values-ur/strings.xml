@@ -4,8 +4,8 @@
     <string name="Urdu_Locale">ur</string>
     <string name="English_Locale">en_US</string>
 
-    <string name="DialogueBoxEnterName">Your Name:</string>
-    <string name="DialogueBoxInputHint">Enter your name here</string>
+    <string name="DialogueBoxEnterName">اپکا نام:</string>
+    <string name="DialogueBoxInputHint">اپنا نام لکھیں</string>
 
     <string name="User_name">Human</string>
     <string name="Music">On</string>
@@ -16,44 +16,44 @@
     <integer name="score_level03">0</integer>
 
     <string name="app_name">Zabani</string>
-    <string name="app_play">Play</string>
-    <string name="app_help">Help</string>
-    <string name="app_options">Options</string>
-    <string name="app_exit">Exit</string>
+    <string name="app_play">کھیلیں</string>
+    <string name="app_help">مدد</string>
+    <string name="app_options">آپشنز</string>
+    <string name="app_exit">بند کریں</string>
 
-    <string name="howtp_blanks">Blanks</string>
-    <string name="howtp_matchTwo">Match Two</string>
-    <string name="howtp_mcq">MCQs</string>
-    <string name="howtp_shuffle">Shuffle</string>
-    <string name="howtp_flashes">Flashes</string>
-    <string name="howtp_stories">Stories</string>
+    <string name="howtp_blanks">خالی جگہ</string>
+    <string name="howtp_matchTwo">دو ملائیں</string>
+    <string name="howtp_mcq">ایم سی قیو</string>
+    <string name="howtp_shuffle">شفل</string>
+    <string name="howtp_flashes">فلیش</string>
+    <string name="howtp_stories">کہانیاں</string>
 
     <string name="options_changeName">نام تبدیل کریں</string>
-    <string name="options_musicChangeOn">Music: ON</string>
-    <string name="options_musicChangeOff">Music: OFF</string>
-    <string name="options_menuText">Menu Text: English</string>
-    <string name="options_resetScores">Reset Scores</string>
+    <string name="options_musicChangeOn">موسیقی: چالو</string>
+    <string name="options_musicChangeOff">موسیقی: بند</string>
+    <string name="options_menuText">مینو کی زبان: اردو</string>
+    <string name="options_resetScores">اسکور صفر کرو</string>
 
-    <string name="result_playAgain">Play Again</string>
-    <string name="result_mainMenu">Main Menu</string>
+    <string name="result_playAgain">دوبارہ کھیلو</string>
+    <string name="result_mainMenu">مین مینو</string>
 
     <string name="BlankTutorial_Header">How to play: Blanks</string>
-    <string name="BlankHelp_01">You will be shown a sentence with few blank(s).</string>
-    <string name="BlankHelp_02">Some possible answers will be shown below it.</string>
-    <string name="BlankHelp_03">Tap on what you think is the correct answer to fill in the space(s).</string>
-    <string name="BlankHelp_04">For each correct answer, you get a +1 score.</string>
+    <string name="BlankHelp_01">آپ کو کچھ خالی جگہ کے ساتھ ایک جملہ دکھایا جائے گا.</string>
+    <string name="BlankHelp_02">اس کے نیچے کچھ ممکنہ جوابات دکھائے جائیں گے.</string>
+    <string name="BlankHelp_03">آپ کو جو جواب درست لگے اس پر کلک کریں.</string>
+    <string name="BlankHelp_04">ہر صحیح جواب کے لیے آپ کو +1 اسکور ملتا ہے.</string>
 
     <string name="McqTutorial_Header">How to play: MCQs</string>
-    <string name="McqHelp_01">You will be shown a multiple choice question.</string>
-    <string name="McqHelp_02">Four possible answers will be shown below it.</string>
-    <string name="McqHelp_03">Tap on what you think is the correct answer.</string>
-    <string name="McqHelp_04">For each correct answer, you get a +1 score.</string>
+    <string name="McqHelp_01">آپ کو ایک سے زیادہ جوابات کا سوال دکھایا جائے گا.</string>
+    <string name="McqHelp_02">اس کے نیچے چار ممکنہ جوابات دکھائے جائیں گے.</string>
+    <string name="McqHelp_03">آپ کو جو جواب درست لگے اس پر کلک کریں.</string>
+    <string name="McqHelp_04">ہر صحیح جواب کے لیے آپ کو +1 اسکور ملتا ہے.</string>
 
     <string name="MatchTwoTutorial_Header">How to play: Match Two</string>
-    <string name="MatchtwoHelp_01">You will be shown a match two question.</string>
-    <string name="MatchtwoHelp_02">Multiple answers will be shown.</string>
-    <string name="MatchtwoHelp_03">Connect two options you think are correct.</string>
-    <string name="MatchtwoHelp_04">For each correct answer, you get a +1 score.</string>
+    <string name="MatchtwoHelp_01">آپ کو ایک میچ دو سوال دکھایا جائے گا.</string>
+    <string name="MatchtwoHelp_02">متعدد جوابات دکھائے جائیں گے.</string>
+    <string name="MatchtwoHelp_03">آپ کو جو دو جواب درست لگیں انہیں اپس میں جوڑ دیں.</string>
+    <string name="MatchtwoHelp_04">ہر صحیح جواب کے لیے آپ کو +1 اسکور ملتا ہے.</string>
 
 
 </resources>
