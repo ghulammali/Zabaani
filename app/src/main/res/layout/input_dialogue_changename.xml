@@ -10,13 +10,18 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:textAppearanceMedium"
         android:text="@string/DialogueBoxEnterName"
-        android:id="@+id/EnterNameTextView" />
+        android:id="@+id/EnterNameTextView"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/DialogueBoxInputHint"
         android:padding="10dp"
+        android:inputType="text"
+        android:maxLength="32"
         android:id="@+id/EnterNameInput" />
 
 

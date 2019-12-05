@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
             editor.putInt("Music_player", 1);
             editor.apply();
             AudioPlay.playAudio(getApplicationContext(), R.raw.overworld_terraria);
+        } else if (keyvalue.equalsIgnoreCase("On") && musicPlayerCount.equals(1)) {
+            //editor.putInt("Music_player", 1);
+            //editor.apply();
+            AudioPlay.playAudio(getApplicationContext(), R.raw.overworld_terraria);
         }
     }
     public void levels (View v){

@@ -4,7 +4,7 @@
     <string name="Urdu_Locale">ur</string>
     <string name="English_Locale">en_US</string>
 
-    <string name="DialogueBoxEnterName">Your Name</string>
+    <string name="DialogueBoxEnterName">Your Name:</string>
     <string name="DialogueBoxInputHint">Enter your name here</string>
 
     <string name="User_name">Human</string>
