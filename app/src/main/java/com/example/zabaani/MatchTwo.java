@@ -36,6 +36,7 @@ public class MatchTwo extends AppCompatActivity {
 
     private int level;
     private int highScore_stars;
+    private int score=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,6 +119,8 @@ public class MatchTwo extends AppCompatActivity {
                                 .y(emptyBox_1.getY())
                                 .setDuration(700)
                                 .start();
+                        score++;
+
                     }
                     else if (view.getId() == R.id.item_4){
                         view.animate()
@@ -147,6 +150,7 @@ public class MatchTwo extends AppCompatActivity {
                                 .y(emptyBox_2.getY())
                                 .setDuration(700)
                                 .start();
+                        score++;
                     }
                     else if (view.getId() == R.id.item_2){
                         view.animate()
@@ -212,6 +216,7 @@ public class MatchTwo extends AppCompatActivity {
                                 .y(emptyBox_3.getY())
                                 .setDuration(700)
                                 .start();
+                        score++;
                     }
                     counter++;
                     break;
@@ -240,6 +245,7 @@ public class MatchTwo extends AppCompatActivity {
                                 .y(emptyBox_4.getY())
                                 .setDuration(700)
                                 .start();
+                        score++;
                     }
                     else if (view.getId() == R.id.item_3){
                         view.animate()
@@ -272,6 +278,7 @@ public class MatchTwo extends AppCompatActivity {
     private void callMCQ(){
         Intent i = new Intent(this, MCQ.class);
         Bundle bundle = new Bundle();
+        bundle.putInt("score", score);
         bundle.putInt("stars", highScore_stars);
         bundle.putInt("level", level);
         i.putExtras(bundle);

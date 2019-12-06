@@ -35,6 +35,7 @@ public class MCQ extends AppCompatActivity {
 
         // receive level number from main activity
         Bundle bundle = getIntent().getExtras();
+        mScore = bundle.getInt("score");
         level = bundle.getInt("level");
         highScore_stars = bundle.getInt("stars");
 
