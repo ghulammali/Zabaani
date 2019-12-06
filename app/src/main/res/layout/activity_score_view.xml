@@ -34,28 +34,29 @@
 
     <Button
         android:id="@+id/again"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="65dp"
         android:layout_marginBottom="168dp"
         android:background="@drawable/rounded_red_border"
         android:fontFamily="@font/changa"
         android:text="@string/result_playAgain"
         android:textColor="#adcf64"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2" />
 
     <Button
         android:id="@+id/Quit"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="65dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/rounded_red_border"
         android:fontFamily="@font/changa"
         android:text="@string/result_mainMenu"
         android:textColor="#adcf64"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/again"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/again"
         app:layout_constraintTop_toBottomOf="@+id/again" />
 
