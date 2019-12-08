@@ -137,6 +137,7 @@ public class MCQ extends AppCompatActivity {
 
             i.putExtras(bundle);
             startActivity(i);
+            finish();
         }
         // otherwise update the questio
 
@@ -166,5 +167,6 @@ public class MCQ extends AppCompatActivity {
     private void callMain(){
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
+        finishAffinity();
     }
 }

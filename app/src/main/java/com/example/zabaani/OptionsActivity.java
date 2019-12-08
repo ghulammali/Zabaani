@@ -4,12 +4,14 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -42,6 +44,19 @@ public class OptionsActivity extends AppCompatActivity {
             MusicButton.setText(R.string.options_musicChangeOff);
         }
     }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) { //Back key pressed
+            //Things to Do
+            Intent intent = new Intent(OptionsActivity.this, MainActivity.class);
+            startActivity(intent);
+            finishAffinity();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
 
     public void onClickChangeNameOption(View view){
         LayoutInflater layoutInflater = LayoutInflater.from(OptionsActivity.this);

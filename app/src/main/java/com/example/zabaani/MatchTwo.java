@@ -284,5 +284,6 @@ public class MatchTwo extends AppCompatActivity {
         i.putExtras(bundle);
 
         startActivity(i);
+        finish();
     }
 }

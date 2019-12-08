@@ -18,16 +18,19 @@ public class HelpActivity extends AppCompatActivity {
     public void onClickBlankHelp(View view){
         Intent intent = new Intent(HelpActivity.this, BlankTutorialActivity.class);
         startActivity(intent);
+        //finish();
     }
 
     public void onClickMcqHelp(View view){
         Intent intent = new Intent(HelpActivity.this, McqTutorialActivity.class);
         startActivity(intent);
+        //finish();
     }
 
     public void onClickMtwoHelp(View view){
         Intent intent = new Intent(HelpActivity.this, MatchTwoTutorialActivity.class);
         startActivity(intent);
+        //finish();
         // Toast.makeText(getApplicationContext(), "Feature Coming Soon!", Toast.LENGTH_SHORT).show();
     }
 

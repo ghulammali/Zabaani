@@ -73,6 +73,7 @@ public class LevelActivity extends AppCompatActivity {
         i.putExtras(bundle);
 
         startActivity(i);
+        finish();
     }
     private String readFromFile(Context context, String level) {
 

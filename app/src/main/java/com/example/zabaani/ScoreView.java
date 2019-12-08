@@ -95,10 +95,12 @@ public class ScoreView extends AppCompatActivity {
     private void level(){
         Intent i = new Intent(this, LevelActivity.class);
         startActivity(i);
+        finish();
     }
     private void callMain(){
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
+        finishAffinity();
     }
     private void writeToFile(String data, Context context, String level) {
         try {

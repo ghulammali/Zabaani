@@ -134,6 +134,7 @@ public class FillBlanks extends AppCompatActivity {
             bundle.putInt("score", mScore);
             i.putExtras(bundle);
             startActivity(i);
+            finish();
         }
         // otherwise update the question
         else {
@@ -162,5 +163,6 @@ public class FillBlanks extends AppCompatActivity {
     private void callMain(){
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
+        finishAffinity();
     }
 }

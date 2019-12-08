@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //finish();
+
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         SharedPreferences.Editor editor = sp.edit();
@@ -38,19 +40,23 @@ public class MainActivity extends AppCompatActivity {
             //editor.apply();
             AudioPlay.playAudio(getApplicationContext(), R.raw.overworld_terraria);
         }
+
     }
     public void levels (View v){
         Intent intent = new Intent(this,LevelActivity.class);
         startActivity(intent);
+        //finish();
     }
     public void onClickHelp(View v){
         Intent intent = new Intent(MainActivity.this, HelpActivity.class);
         startActivity(intent);
+        //finish();
     }
     // CHANGE THIS BACK
     public void onClickOption(View v){
         Intent intent = new Intent(MainActivity.this, OptionsActivity.class);
         startActivity(intent);
+        //finish();
     }
 
 
