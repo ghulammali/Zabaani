@@ -21,7 +21,7 @@ public class FillBlanks extends AppCompatActivity {
     private Button Quit;
 
     private int level;
-    private int QuestionsLeft = 2;
+    private int QuestionsLeft = 1;
     private String mAnswer;
     public static int mScore;
     private int mQuestionNumber;
@@ -42,12 +42,10 @@ public class FillBlanks extends AppCompatActivity {
         // configure number of questions according to the level
         if (level == 1){
             mQuestionNumber = 0;
-        }
-        else if (level == 2){
+        } else if (level == 2){
+            mQuestionNumber = 1;
+        } else if (level == 3) {
             mQuestionNumber = 2;
-        }
-        else if (level == 3){
-            mQuestionNumber = 4;
         }
 
 

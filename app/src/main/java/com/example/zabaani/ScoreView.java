@@ -119,8 +119,7 @@ public class ScoreView extends AppCompatActivity {
         }
         else if (score <= 2){
             stars = 1;
-        }
-        else if (score <= 4){
+        } else if (score <= 5) {
             stars = 2;
         }
         else if (score >= 6){

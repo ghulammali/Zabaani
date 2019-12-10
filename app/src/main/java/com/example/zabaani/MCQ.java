@@ -21,7 +21,7 @@ public class MCQ extends AppCompatActivity {
     private Button mButtonChoice4;
     private Button Quit;
 
-    private int QuestionsLeft = 5;
+    private int QuestionsLeft = 2;
     private String mAnswer;
     public int mScore = 0;
     private int mQuestionNumber; // use random number here
@@ -41,13 +41,13 @@ public class MCQ extends AppCompatActivity {
 
         // configure number of questions according to the level
         if (level == 1){
-            mQuestionNumber = 0;
-        }
-        else if (level == 2){
             mQuestionNumber = 3;
         }
+        else if (level == 2){
+            mQuestionNumber = 4;
+        }
         else if (level == 3){
-            mQuestionNumber = 6;
+            mQuestionNumber = 2;
         }
 
 
@@ -127,7 +127,7 @@ public class MCQ extends AppCompatActivity {
 
     private void updateQuestion(){
         // if all questions have been answered, move on to next activity (fill blanks)
-        if (QuestionsLeft == 2){
+        if (QuestionsLeft == 1) {
             Intent i = new Intent(this, FillBlanks.class);
 
             Bundle bundle = new Bundle();
@@ -154,12 +154,13 @@ public class MCQ extends AppCompatActivity {
             if (QuestionsLeft > 1) {
                 QuestionsLeft--;
                 mQuestionsLeft.setText(String.valueOf(QuestionsLeft));
-            } else if (QuestionsLeft == 1) {
-                QuestionsLeft--;
-                mQuestionsLeft.setText("Last Question!");
-                mQuestionsLeftTextBox.setText("");
-
             }
+//            else if (QuestionsLeft == 1) {
+//                QuestionsLeft--;
+//                mQuestionsLeft.setText("Last Question!");
+//                mQuestionsLeftTextBox.setText("");
+//
+//            }
         }
 
     }
